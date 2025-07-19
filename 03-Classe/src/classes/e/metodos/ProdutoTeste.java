@@ -2,7 +2,7 @@ package classes.e.metodos;
 
 public class ProdutoTeste {
     public static void main(String[] args) {
-        
+
         Produto p1 = new Produto("Notebook", 4356.89 , 0.25);
 
         var p2 = new Produto();
