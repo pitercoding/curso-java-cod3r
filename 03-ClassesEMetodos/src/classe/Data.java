@@ -1,4 +1,4 @@
-package classes.e.metodos;
+package classe;
 
 public class Data {
     int dia;
