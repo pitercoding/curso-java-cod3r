@@ -5,19 +5,27 @@ public class Data {
     int mes;
     int ano;
 
+    //Construtor
     Data () {
-        dia = 1;
-        mes = 1;
-        ano = 1970;
+        //dia = 1;
+        //mes = 1;
+        //ano = 1970;
+        this(1, 1, 1970); //Chamando um outro construtor com this()
     }
 
-    Data (int diaInicial, int mesInicial, int anoInicial) {
-        dia = diaInicial;
-        mes = mesInicial;
-        ano = anoInicial;
+    //Construtor
+    Data (int dia, int mes, int ano) {
+        this.dia = dia; //this.dia = referencia o objeto atual
+        this.mes = mes;
+        this.ano = ano;
     }
 
     String obterDataFormatada (){
-        return String.format("%d/%d/%d", dia, mes, ano);
+        final String formato = "%d/%d/%d";
+        return String.format(formato, this.dia, mes, ano);
+    }
+
+    void imprimirDataFormatada(){
+        System.out.println(this.obterDataFormatada());
     }
 }
