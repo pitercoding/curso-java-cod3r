@@ -32,7 +32,7 @@ public class Desafio {
         //Calculo da média
         double media = soma / notas.length;
         System.out.printf("Média do aluno: %.2f", media);
-        
+
         scanner.close();
     }
 }
