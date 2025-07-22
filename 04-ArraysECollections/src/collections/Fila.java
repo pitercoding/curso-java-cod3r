@@ -31,7 +31,7 @@ public class Fila {
         System.out.println(fila.poll());
         System.out.println(fila.poll());
         System.out.println(fila.remove()); //Exceção se fila vazia
-        
+
         /*
         fila.size();  TAMANHO
         fila.clear();  LIMPAR
