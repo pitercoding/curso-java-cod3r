@@ -22,7 +22,7 @@ public class Usuario {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hashCode(nome);
+   public int hashCode() {
+        return this.nome.length();
     }
 }
