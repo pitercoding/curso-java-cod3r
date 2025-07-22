@@ -7,11 +7,12 @@ public class ConjuntoBaguncado {
 
         HashSet conjunto = new HashSet();
 
-        conjunto.add(1.2);
-        conjunto.add(true);
-        conjunto.add("Teste");
-        conjunto.add(1);
-        conjunto.add('x');
+        //Não suporte tipo primitivo, por isso:
+        conjunto.add(1.2); //double -> Double
+        conjunto.add(true); //boolean -> Boolean
+        conjunto.add("Teste"); //String
+        conjunto.add(1); //int -> Integer
+        conjunto.add('x'); //char -> Character
 
         System.out.println("Tamanho: " + conjunto.size());
 
@@ -19,15 +20,15 @@ public class ConjuntoBaguncado {
         conjunto.add('x');
         System.out.println("Tamanho: " + conjunto.size());
 
-        System.out.println(conjunto.remove("teste"));
-        System.out.println(conjunto.remove("Teste"));
-        System.out.println(conjunto.remove('x'));
+        System.out.println(".remove(): " + conjunto.remove("teste"));
+        System.out.println(".remove(): " + conjunto.remove("Teste"));
+        System.out.println(".remove(): " + conjunto.remove('x'));
 
         System.out.println("Tamanho: " + conjunto.size());
 
-        System.out.println(conjunto.contains('x'));
-        System.out.println(conjunto.contains(1));
-        System.out.println(conjunto.contains(true));
+        System.out.println(".contains(): " + conjunto.contains('x'));
+        System.out.println(".contains(): " + conjunto.contains(1));
+        System.out.println(".contains(): " + conjunto.contains(true));
 
         HashSet nums = new HashSet();
 
