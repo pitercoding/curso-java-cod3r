@@ -2,7 +2,7 @@ package oo.heranca.desafio;
 
 public class Autodromo {
     public static void main(String[] args) {
-        Carro ferrari = new Ferrari();
+        Carro ferrari = new Ferrari(400);
         Carro fusca = new Fusca();
 
         System.out.println("\nFerrari:");
