@@ -7,9 +7,7 @@ public class Jogo {
         monstro.x = 10; //Eixo X: Posição pré-estabelecida
         monstro.y = 10; //Eixo Y: Posição pré-estabelecida
 
-        Heroi heroi = new Heroi();
-        heroi.x = 10; //Eixo X: Posição pré-estabelecida
-        heroi.y = 11; //Eixo Y: Posição pré-estabelecida
+        Heroi heroi = new Heroi(10, 11); //Posição definida pelo construtor
 
         System.out.println("Life Monstro: " + monstro.life);
         System.out.println("Life Heroi: " + heroi.life);

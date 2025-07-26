@@ -6,6 +6,12 @@ public class Jogador {
     int x;
     int y;
 
+     //Construtor explícito
+    Jogador(int x, int y){
+        this.x =x;
+        this.y = y;
+    }
+
     boolean atacar(Jogador oponente){
 
         int deltaX = Math.abs(x - oponente.x); //Conhecer a posição do oponente no eixo X
