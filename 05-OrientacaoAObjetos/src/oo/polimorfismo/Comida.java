@@ -1,19 +1,12 @@
 package oo.polimorfismo;
 
-public class Pessoa {
+public class Comida {
     protected double peso;
 
-    //Construtor
-    public Pessoa(double peso) {
+    public Comida(double peso) {
         setPeso(peso);
     }
 
-    //Métodos
-    public void comer(Comida comida){
-        this.peso += comida.getPeso();
-    }
-
-    //Getters & Setters
     public double getPeso() {
         return peso;
     }
