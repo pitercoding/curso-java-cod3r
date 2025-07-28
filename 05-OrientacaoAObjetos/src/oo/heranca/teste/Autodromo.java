@@ -14,6 +14,8 @@ public class Autodromo {
         ferrari.ligarAr();
         ferrari.desligarAr();
 
+        System.out.printf("Velocidade do Ar: %d\n", ferrari.velocidadeDoAr());
+
         ferrari.acelerar();
         ferrari.frear();
         System.out.println(ferrari);
