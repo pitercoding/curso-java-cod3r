@@ -6,6 +6,7 @@ public class Jantar {
 
         Arroz ingrediente1 = new Arroz(0.2);
         Feijao ingrediente2 = new Feijao(0.1);
+        // Comida ingrediante3 = new Comida(); //Classe abstrata não deixa instanciar
 
         System.out.println("Peso inicial: " + convidado.getPeso());
 
