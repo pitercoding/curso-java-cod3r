@@ -28,7 +28,7 @@ public class Desafio {
         Function<Double, String> formatar =
                 preco -> NumberFormat.getCurrencyInstance(new Locale("pt", "BR"))
                         .format(preco);
-        
+
         Produto p = new Produto("iPad", 3235.89, 0.13);
 
         // Encadeando tudo
