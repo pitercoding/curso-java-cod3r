@@ -30,7 +30,7 @@ public class CriandoStreams {
         outrasLangs.parallelStream().forEach(print); // imprimindo ordem aleatória
 
         // Stream a partir do método generate
-        Stream.generate(() -> "a").forEach(print); // processa infinitamente sem ordem
+        // Stream.generate(() -> "a").forEach(print); // processa infinitamente sem ordem
         Stream.iterate(0, n -> n + 1).forEach(println); // processa infinitamente com ordem
 
 
