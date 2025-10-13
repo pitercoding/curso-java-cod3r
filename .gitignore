@@ -57,6 +57,7 @@ application-dev.properties
 application-test.properties
 database.properties
 *.env
+conexao.properties
 
 # Other
 *.ctxt
