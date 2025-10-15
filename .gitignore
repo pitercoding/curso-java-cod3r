@@ -64,3 +64,7 @@ conexao.properties
 .mtj.tmp/
 hs_err_pid*
 replay_pid*
+
+# JPA configuration (local)
+**/persistence.xml
+
