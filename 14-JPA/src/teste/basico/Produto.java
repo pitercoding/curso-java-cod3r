@@ -20,9 +20,9 @@ public class Produto {
 
     }
 
-    public Produto(Double preco, String nome) {
-        this.preco = preco;
+    public Produto(String nome, Double preco) {
         this.nome = nome;
+        this.preco = preco;
     }
 
     public Long getId() {
