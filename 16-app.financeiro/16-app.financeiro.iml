@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="15-app.calculo" />
+    <orderEntry type="module" module-name="17-app.logging" />
   </component>
 </module>
