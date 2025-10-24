@@ -1,9 +1,7 @@
 package br.com.cod3r.exerciciossb.controllers;
 
-import br.com.cod3r.exerciciossb.models.Cliente;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import br.com.cod3r.exerciciossb.model.entities.Cliente;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "/clientes")
