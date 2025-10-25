@@ -22,4 +22,9 @@ public class ProdutoController {
     public Iterable<Produto> obterProdutos() {
         return produtoRepository.findAll();
     }
+
+    @GetMapping(path = "/{id}")
+    public Optional<Produto> obterProdutoPorId(@PathVariable int id) {
+        return produtoRepository.findById(id);
+    }
 }
