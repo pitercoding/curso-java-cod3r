@@ -12,10 +12,14 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @NotBlank
     private String nome;
 
+    @Min(0)
     private double preco;
 
+    @Min(0)
+    Max(1)
     private double desconto;
 
     public Produto() {
