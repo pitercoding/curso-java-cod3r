@@ -28,6 +28,14 @@ public class ProdutoController {
         return produtoRepository.findAll();
     }
 
+    //    @GetMapping(path = "/pagina/{numeroPagina}/{qtdePagina}")
+//    public Iterable<Produto> obterProdutosPorPagina(
+//            @PathVariable int numeroPagina, @PathVariable int qtdePagina) {
+//        if (qtdePagina >= 5) qtdePagina = 5;
+//        Pageable page = PageRequest.of(numeroPagina, 3);
+//        return produtoRepository.findAll(page);
+//    }
+
     @GetMapping(path = "/{id}")
     public Optional<Produto> obterProdutoPorId(@PathVariable int id) {
         return produtoRepository.findById(id);
