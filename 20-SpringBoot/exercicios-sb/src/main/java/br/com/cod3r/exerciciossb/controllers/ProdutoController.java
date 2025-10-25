@@ -28,7 +28,12 @@ public class ProdutoController {
         return produtoRepository.findAll();
     }
 
-    //    @GetMapping(path = "/pagina/{numeroPagina}/{qtdePagina}")
+    @GetMapping(path = "/nome/{parteNome}")
+    public Iterable<Produto> obterProdutosPorNome(@PathVariable String parteNome) {
+        return produtoRepository.findByNomeContainingIgnoreCase(parteNome);
+    }
+
+//    @GetMapping(path = "/pagina/{numeroPagina}/{qtdePagina}")
 //    public Iterable<Produto> obterProdutosPorPagina(
 //            @PathVariable int numeroPagina, @PathVariable int qtdePagina) {
 //        if (qtdePagina >= 5) qtdePagina = 5;
