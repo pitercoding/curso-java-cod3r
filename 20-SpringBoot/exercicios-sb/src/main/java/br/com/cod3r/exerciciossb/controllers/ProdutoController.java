@@ -27,4 +27,11 @@ public class ProdutoController {
     public Optional<Produto> obterProdutoPorId(@PathVariable int id) {
         return produtoRepository.findById(id);
     }
+
+    //1
+    @PutMapping
+    public Produto alterarProduto(@Valid Produto produto) {
+        produtoRepository.save(produto);
+        return produto;
+    }
 }
