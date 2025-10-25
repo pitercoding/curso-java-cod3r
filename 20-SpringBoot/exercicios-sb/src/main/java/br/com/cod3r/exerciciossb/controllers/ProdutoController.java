@@ -2,8 +2,11 @@ package br.com.cod3r.exerciciossb.controllers;
 
 import br.com.cod3r.exerciciossb.model.entities.Produto;
 import br.com.cod3r.exerciciossb.model.repositories.ProdutoRepository;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/produtos")
@@ -12,8 +15,10 @@ public class ProdutoController {
     @Autowired //Cria um objeto dentro de produtoRepository
     private ProdutoRepository produtoRepository;
 
-    @PostMapping()
-    public @ResponseBody Produto novoProduto(@Valid Produto produto) {
+    //Antes: era um @PostMapping
+    //Agora: PUT e POST juntos com @RequestMapping
+    @RequestMapping(method = {RequestMethod.POST, RequestMethod.PUT})
+    public @ResponseBody Produto salvarProduto(@Valid Produto produto) {
         produtoRepository.save(produto);
         return produto;
     }
@@ -28,10 +33,11 @@ public class ProdutoController {
         return produtoRepository.findById(id);
     }
 
-    //1
-    @PutMapping
-    public Produto alterarProduto(@Valid Produto produto) {
-        produtoRepository.save(produto);
-        return produto;
-    }
+    //Esse método é igual ao novoProduto.
+    // É possível removê-lo se usar RequestMapping + method={RequestMethod.POST, RequestMethod.PUT}
+//    @PutMapping
+//    public Produto alterarProduto(@Valid Produto produto) {
+//        produtoRepository.save(produto);
+//        return produto;
+//    }
 }
